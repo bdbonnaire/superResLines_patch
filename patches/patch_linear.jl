@@ -1,11 +1,15 @@
+"""
+This file creates a spectrogram with one linear chirps and verifies
+that taking a window gives the same estimation.
+"""
 import Pkg
 Pkg.activate("..")
 using LinearAlgebra, Plots
 using Random, Distributions
 using LaTeXStrings
 
-push!(LOAD_PATH,"src/");
-push!(LOAD_PATH, "src/libspec");
+push!(LOAD_PATH,"../src/");
+push!(LOAD_PATH, "../src/libspec");
 
 using blasso, sfw, certificate, toolbox
 using Spectrogram: gauss_spectrogram
