@@ -1,5 +1,5 @@
 import Pkg
-Pkg.activate(".")
+Pkg.activate("..")
 using LinearAlgebra, Plots
 using Random, Distributions
 using LaTeXStrings
